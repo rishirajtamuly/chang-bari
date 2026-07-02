@@ -7,7 +7,7 @@ form.addEventListener("submit", async function (e) {
     const data = Object.fromEntries(formData);
 
     try {
-        const response = await fetch("/contact", {
+        const response = await fetch("https://chang-bari.onrender.com/contact", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
