@@ -8,12 +8,14 @@
 
     <title>CHANG BARI | An Assamese Homestead Rooted in Nature</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
 
 </head>
 
@@ -202,7 +204,7 @@
     </section>
 
     <!-- ECOSYSTEM SECTION STARTS HERE -->
-         <!-- =========================
+    <!-- =========================
             ECOSYSTEM
     ========================== -->
 
@@ -438,7 +440,7 @@
                 forms of wildlife will find food and shelter here.
 
                 One of our most treasured trees is the <strong>Cluster Fig
-                (Ficus racemosa)</strong>, a keystone species whose fruits
+                    (Ficus racemosa)</strong>, a keystone species whose fruits
                 are especially important for the <strong>Great Indian Hornbill</strong>
                 and many other forest animals.
 
@@ -449,7 +451,7 @@
     </section>
 
     <!-- GALLERY SECTION STARTS HERE -->
-         <!-- =========================
+    <!-- =========================
             GALLERY
     ========================== -->
 
@@ -529,7 +531,7 @@
 
                     <p><strong>Email:</strong> rishirajtamuly.pro@gmail.com</p>
 
-                    
+
                     <p>
                         A homestead dedicated to biodiversity,
                         sustainable farming and ecological conservation.
@@ -537,15 +539,16 @@
 
                 </div>
 
-                <form class="contact-form">
+                
+                <form class="contact-form" id="contactForm">
 
-                    <input type="text" placeholder="Your Name" required>
+                    <input type="text" name="name" placeholder="Your Name" required>
 
-                    <input type="email" placeholder="Your Email" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
 
-                    <input type="text" placeholder="Subject">
+                    <input type="text" name="subject" placeholder="Subject" required>
 
-                    <textarea rows="6" placeholder="Your Message"></textarea>
+                    <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
 
                     <button type="submit" class="btn">
                         Send Message
@@ -610,6 +613,7 @@
 
     </footer>
 
+    <script src="js/script.js"></script>
 </body>
 
 </html>
