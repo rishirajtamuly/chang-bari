@@ -1,24 +1,30 @@
-const form = document.getElementById("contactForm");
+console.log("script.js loaded");
 
-form.addEventListener("submit", async function (e) {
-    e.preventDefault();
+// No form submission code here anymore
+// Netlify Forms handles the contact form automatically
 
-    const formData = new FormData(form);
-    const data = Object.fromEntries(formData);
 
-    try {
-        const response = await fetch("https://chang-bari.onrender.com/contact", {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json"
-            },
-            body: JSON.stringify(data)
-        });
+// const form = document.getElementById("contactForm");
 
-        const result = await response.text();
-        alert(result);
+// form.addEventListener("submit", async function (e) {
+//     e.preventDefault();
 
-    } catch (err) {
-        console.error("FETCH ERROR:", err);
-    }
-});
+//     const formData = new FormData(form);
+//     const data = Object.fromEntries(formData);
+
+//     try {
+//         const response = await fetch("https://chang-bari.onrender.com/contact", {
+//             method: "POST",
+//             headers: {
+//                 "Content-Type": "application/json"
+//             },
+//             body: JSON.stringify(data)
+//         });
+
+//         const result = await response.text();
+//         alert(result);
+
+//     } catch (err) {
+//         console.error("FETCH ERROR:", err);
+//     }
+// });
